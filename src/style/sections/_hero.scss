@@ -14,15 +14,30 @@
   bottom: 0;
   right: 0;
   z-index: -1;
-
-  // If you want to set a background image on the hero section, uncomment these with yout custom image
-
-  /* background: url("/src/assets/[your-image].png");
+  background-image: url('background.jpg');
   background-position: center;
-  background-size: cover; */
+  background-size: cover;
 
   @include respond(phone) {
     padding: 0rem $default-font-size;
+  }
+
+  .hero-row {
+    align-content: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 20ch;
+    bottom: 0;
+    right: 0;
+    @include respond(phone) {
+      position: relative;
+      left: 0;
+    }
+    @include respond(phone-xs) {
+      position: relative;
+      left: 0;
+    }
   }
 
   .hero-title {
@@ -44,6 +59,26 @@
     }
     @include respond(phone-xs) {
       font-size: 2.8rem;
+    }
+  }
+
+  .hero-icon {
+    width: 120;
+    margin-right: 3.2rem;
+
+    @include respond(tab-land) {
+      margin-right: 3rem;
+    }
+    @include respond(tab-port) {
+      margin-right: 2.8rem;
+    }
+    @include respond(phone) {
+      margin-bottom: 1.5rem;
+      margin-right: 0rem;
+    }
+    @include respond(phone-xs) {
+      margin-bottom: 1rem;
+      margin-right: 0rem;
     }
   }
 
