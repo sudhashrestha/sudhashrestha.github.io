@@ -28,7 +28,7 @@ const Projects = () => {
         <div className="project-wrapper">
           <Title title="Projects" />
           {projects.map((project) => {
-            const { title, info, info2, url, repo, img, id } = project;
+            const { title, info, info2, url, repo, img, id, android, ios, features } = project;
 
             return (
               <Row key={id}>
@@ -49,15 +49,36 @@ const Projects = () => {
                         </p>
                         <p className="mb-4">{info2 || ''}</p>
                       </div>
-                      <a
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="cta-btn cta-btn--hero"
-                        href={url || '#!'}
-                      >
-                        See Live
-                      </a>
-
+                      {url && (
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="cta-btn cta-btn--hero"
+                          href={url || '#!'}
+                        >
+                          See Live
+                        </a>
+                      )}
+                      {ios && (
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="cta-btn cta-btn--hero"
+                          href={ios || '#!'}
+                        >
+                          App Store
+                        </a>
+                      )}
+                      {android && (
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className={!ios ? 'cta-btn cta-btn--hero' : 'cta-btn text-color-main'}
+                          href={android || '#!'}
+                        >
+                          Play Store
+                        </a>
+                      )}
                       {repo && (
                         <a
                           target="_blank"
@@ -68,6 +89,26 @@ const Projects = () => {
                           Source Code
                         </a>
                       )}
+                      <Row style={{ marginTop: 12, marginLeft: 4 }}>
+                        {features &&
+                          features.map((feature) => (
+                            <p
+                              style={{
+                                fontSize: 14,
+                                backgroundColor: '#02aab0',
+                                marginRight: 8,
+                                borderRadius: 12,
+                                color: 'white',
+                                paddingBlockStart: 4,
+                                paddingBlockEnd: 4,
+                                paddingLeft: 8,
+                                paddingRight: 8,
+                              }}
+                            >
+                              {feature}
+                            </p>
+                          ))}
+                      </Row>
                     </div>
                   </Fade>
                 </Col>
