@@ -24,7 +24,7 @@ export const aboutData = {
   paragraphTwo:
     'Even though I can work independently in several small to large scale projects, I am also a good team player who can fit right in for complex projects. I am a proactive, top-notch communicator and a problem solver who is right by your side to make the dream project come true.',
   paragraphThree: 'Thank you for checking in, hopefully, we will collaborate soon.',
-  resume: 'https://www.linkedin.com/in/sudhastha/', // if no resume, the button will not show up
+  // resume: 'https://www.linkedin.com/in/sudhastha/', // if no resume, the button will not show up
 };
 
 // PROJECTS DATA
