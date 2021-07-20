@@ -31,15 +31,31 @@ export const aboutData = {
 export const projectsData = [
   {
     id: nanoid(),
-    img: 'causeway.png',
-    title: 'Causeway',
-    info: `Causeway shows the real-time traffic load and forecast at Singapore's causeways. The app also has a directory of several place categories, their information and contact, and currency exchange feature.`,
-    info2: '',
-    url: '',
-    android: 'https://play.google.com/store/apps/details?id=com.causeway',
-    ios: 'https://apps.apple.com/us/app/id1508468348',
-    repo: '', // if no repo, the button will not show up
-    features: ['REST API integration', 'Google Ads', 'Location tracking', 'Internationalization'],
+    img: 'evil_minds.png',
+    title: 'Evil Minds: Dirty Charades!',
+    info: 'Evil Minds is the brand new whole-body word game from Evil Studios Limited!',
+    info2: 'The game consists of fun animations along with tilt detection.',
+    features: [
+      'Animation',
+      'In-app purchase',
+      'Analytics',
+      'Sensors',
+      'Push Notification',
+      'Deep Linking',
+    ],
+    android: 'https://play.google.com/store/apps/details?id=com.evilstudios.evilminds',
+    ios: 'https://apps.apple.com/us/app/evil-minds-dirty-charades/id962566898',
+  },
+  {
+    id: nanoid(),
+    img: 'black_cards.png',
+    title: 'Black Cards: You Against Humanity Expansion!',
+    info:
+      'Black Cards is an easy to use virtual expansion pack for fill-in-the-blank style card games.',
+    info2: 'Another game from Evil Studios Limited!',
+    features: ['Animation', 'In-app purchase', 'Analytics', 'Push Notification', 'Deep Linking'],
+    android: 'https://play.google.com/store/apps/details?id=com.evilapples.blackcards',
+    ios: 'https://apps.apple.com/us/app/black-cards/id788887465',
   },
   {
     id: nanoid(),
@@ -49,7 +65,7 @@ export const projectsData = [
     info2: '',
     url: '',
     android: 'https://play.google.com/store/apps/details?id=app.opiner',
-    // ios: 'https://apps.apple.com/us/app/id1491904115',
+    ios: 'https://apps.apple.com/app/id1492476764',
     features: [
       'Video Recording',
       'Video Compressing',
@@ -63,15 +79,15 @@ export const projectsData = [
   },
   {
     id: nanoid(),
-    img: 'zaperp.png',
-    title: 'ZapERP',
-    info:
-      'ZapERP offers CRM, inventory management, sales/invoice management and much more. The app was initially taken as a small project then we kept on adding different module to reach to the form it is today.',
+    img: 'causeway.png',
+    title: 'Causeway.sg - Singapore Traffic Camera Stream',
+    info: `Causeway shows the real-time traffic load and forecast at Singapore's causeways. The app also has a directory of several place categories, their information and contact, and currency exchange feature.`,
     info2: '',
     url: '',
-    android: 'https://play.google.com/store/apps/details?id=com.zaperp.android',
-    ios: 'https://apps.apple.com/us/app/zaperp/id1449602725',
-    features: ['REST API Integration', 'Redux', 'Axios', 'MomentJS'],
+    android: 'https://play.google.com/store/apps/details?id=com.causeway',
+    ios: 'https://apps.apple.com/us/app/id1508468348',
+    repo: '', // if no repo, the button will not show up
+    features: ['REST API integration', 'Google Ads', 'Location tracking', 'Internationalization'],
   },
   {
     id: nanoid(),
@@ -91,6 +107,18 @@ export const projectsData = [
       'Firebase',
       'Line Authentication',
     ],
+  },
+  {
+    id: nanoid(),
+    img: 'zaperp.png',
+    title: 'ZapERP',
+    info:
+      'ZapERP offers CRM, inventory management, sales/invoice management and much more. The app was initially taken as a small project then we kept on adding different module to reach to the form it is today.',
+    info2: '',
+    url: '',
+    android: 'https://play.google.com/store/apps/details?id=com.zaperp.android',
+    ios: 'https://apps.apple.com/us/app/zaperp/id1449602725',
+    features: ['REST API Integration', 'Redux', 'Axios', 'MomentJS'],
   },
   {
     id: nanoid(),
