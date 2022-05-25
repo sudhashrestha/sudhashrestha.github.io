@@ -59,6 +59,25 @@ export const projectsData = [
   },
   {
     id: nanoid(),
+    img: 'eeep.png',
+    title: 'eeep!',
+    info:
+      'eeep! makes it easier to find inspirational hotels, bars, restaurants and visitor attractions through curated content and beautiful photography.',
+    info2: '',
+    features: [
+      'Social Login',
+      'Maps',
+      'Analytics',
+      'REST API integration',
+      'Push Notification',
+      'Deep Linking',
+      'Followers',
+    ],
+    android: 'https://play.google.com/store/apps/details?id=app.eeep.travel',
+    ios: 'https://apps.apple.com/us/app/eeep/id1553031915',
+  },
+  {
+    id: nanoid(),
     img: 'opiner.png',
     title: 'Opiner Responder',
     info: `Opiner is a simple app that lets user share their thoughts and opinions through videos. This app contains features like video recording, compressing editing, uploading videos/photos and push notifications.`,
