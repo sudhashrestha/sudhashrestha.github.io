@@ -118,6 +118,16 @@ export const projectsData = [
   },
   {
     id: nanoid(),
+    img: 'vehicle_rto.png',
+    title: 'RTO Vehicle Information',
+    info:
+      "RTO Vehicle Info provides you the information about your vehicle's RTO based on your vehicle number. In addition to this, this app also gives you your license, challan, insurance info, fuel price, resale price, and much more.",
+    info2: '',
+    features: ['React Native', 'AdMob', 'REST API integration'],
+    android: 'https://play.google.com/store/apps/details?id=com.vehicle.rto.vahan.information',
+  },
+  {
+    id: nanoid(),
     img: 'clinical_ethics.png',
     title: 'Clinical Ethics',
     info:
